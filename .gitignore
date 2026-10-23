@@ -1,0 +1,17 @@
+# Generated builds and local state
+/dist/
+/work/
+**/test-data/
+**/adapter-data/
+**/adapter-downloads/
+*.exe
+*.dll
+*.pdb
+*.zip
+*.log
+*.jsonl
+*.word-check
+*.krc-check
+.vs/
+.DS_Store
+Thumbs.db

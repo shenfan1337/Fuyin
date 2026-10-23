@@ -1,0 +1,16 @@
+Fuyin / 浮音
+Copyright 2026 Fuyin contributors
+
+Distributed under the Apache License, Version 2.0.
+
+Portions adapt Lyricify Lyrics Helper (Apache-2.0).
+Retained upstream source and license are in app/third-party/Lyricify-Lyrics-Helper/.
+Adaptations and optional external integrations are described in
+app/third-party/NOTICE.md.
+
+Optional BetterNCM / InfLink-rs components are downloaded separately only after
+explicit user action and are not bundled with this repository or release ZIP.
+Their respective upstream licenses apply.
+
+Music, lyrics and album covers belong to their respective rights holders and
+are not included as song fixtures or licensed by the Fuyin project.
