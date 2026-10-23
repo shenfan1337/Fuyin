@@ -1,0 +1,24 @@
+name: Windows build
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build from source and run offline checks
+        shell: powershell
+        run: ./scripts/Build.ps1 -Test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Fuyin-Windows
+          path: |
+            dist/*.zip
+            dist/*.sha256
+          if-no-files-found: error
